@@ -8,6 +8,8 @@
 
 import pandas as pd
 import statsmodels.api as sm
+import matplotlib.pyplot as plt
+plt.style.use('ggplot')
 
 #path to this file: "C:\Users\jtaylor\Projects\Git\Code\test\stat01.py"
 
@@ -18,3 +20,11 @@ x = df[['educ', 'exper', 'tenure']]
 
 wageReg = sm.OLS(y,x).fit()
 print wageReg.summary()
+
+###I want to add more changes to this file###
+
+plt.scatter(df['educ'], df['wage'])
+plt.ylabel("Wage in Dollars")
+plt.xlabel("Education in Years")
+plt.show()
+#making a comment
