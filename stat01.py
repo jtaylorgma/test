@@ -27,4 +27,7 @@ plt.scatter(df['educ'], df['wage'])
 plt.ylabel("Wage in Dollars")
 plt.xlabel("Education in Years")
 plt.show()
+
+print "Hello World!"
+
 #making a comment
